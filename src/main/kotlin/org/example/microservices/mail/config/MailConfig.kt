@@ -32,7 +32,7 @@ class MailConfig {
         val mailSender: JavaMailSenderImpl = JavaMailSenderImpl()
 
         mailSender.host = host
-        mailSender.port = port as Int
+        mailSender.port = port.toInt()
         mailSender.username = username
         mailSender.password = password
 
